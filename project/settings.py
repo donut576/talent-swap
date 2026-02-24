@@ -33,7 +33,7 @@ ALLOWED_HOSTS = ['*', '.pythonanywhere.com']  # 部署時應該設定具體的�
 # Application definition
 
 INSTALLED_APPS = [
-    'myapp',
+    'myapp.apps.MyappConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
