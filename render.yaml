@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: talent-swap
+    runtime: python
+    buildCommand: bash build.sh
+    startCommand: gunicorn project.wsgi:application
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.0
+      - key: DEBUG
+        value: False
