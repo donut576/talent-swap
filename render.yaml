@@ -2,6 +2,7 @@ services:
   - type: web
     name: talent-swap
     runtime: python
+    plan: free
     buildCommand: bash build.sh
     startCommand: gunicorn project.wsgi:application
     envVars:
