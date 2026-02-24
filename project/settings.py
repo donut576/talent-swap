@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-sihs2%qg0$346u+g0qo@_7zfxbkc8@i3kb7=i@g2#6nb3g_x=-
 DEBUG = os.environ.get('DEBUG', 'True') == 'True'
 USE_I18N = True
 
-ALLOWED_HOSTS = ['*']  # 部署時應該設定具體的域名
+ALLOWED_HOSTS = ['*', '.pythonanywhere.com']  # 部署時應該設定具體的域名
 
 
 # Application definition
